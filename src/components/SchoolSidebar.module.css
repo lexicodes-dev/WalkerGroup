@@ -1,0 +1,92 @@
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-top: 4px solid #9a2154;
+  align-self: flex-start;
+}
+
+.sidebarMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarMenu li {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.sidebarMenu li:last-child {
+  border-bottom: none;
+}
+
+.sidebarLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  color: #555555;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: color 0.2s;
+}
+
+.sidebarLink:hover {
+  color: #9a2154;
+}
+
+.redPlus {
+  color: #9a2154;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* Mobile Toggle Styles */
+.mobileMainToggle {
+  display: none;
+  background-color: #9a2154;
+  color: #ffffff;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileMainToggle .icon {
+  color: #ffffff;
+}
+
+.menuContainer {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 100%;
+    padding: 0;
+    background: transparent;
+    border-top: none;
+  }
+  .mobileMainToggle {
+    display: flex;
+  }
+  .menuContainer.mobileClosed {
+    display: none;
+  }
+  .menuContainer.mobileOpen {
+    display: block;
+    background-color: #ffffff;
+  }
+  .sidebarMenu li {
+    border-bottom: 1px solid #9a2154; /* Match the red lines on mobile */
+  }
+  .sidebarLink {
+    padding: 1rem 1.5rem;
+  }
+}

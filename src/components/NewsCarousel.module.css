@@ -1,0 +1,83 @@
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 400px; /* Constrain width for mobile single-card view */
+  margin: 0 auto;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.emblaContainer {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(1rem * -1);
+}
+
+.emblaSlide {
+  flex: 0 0 100%;
+  min-width: 0;
+  padding-left: 1rem;
+}
+
+.slideContent {
+  /* No additional styling needed, children bring their own .newsCard style */
+  height: 100%;
+}
+
+.navButton {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  color: #333;
+  transition: opacity 0.3s;
+}
+
+.navButton svg {
+  width: 20px;
+  height: 20px;
+}
+
+.prevButton {
+  left: -20px;
+}
+
+.nextButton {
+  right: -20px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.activeDot {
+  width: 24px;
+  background-color: #631737; /* Dark maroon from screenshot */
+}

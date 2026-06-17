@@ -1,0 +1,148 @@
+.pageWrapper {
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  gap: 4rem;
+  background-color: #ffffff;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.pageTitle {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #222222;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.staffGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.staffCard {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+}
+
+.photoWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: relative;
+  background-color: #f0f0f0;
+  margin-bottom: 0.75rem;
+}
+
+.photo {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.staffName {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 0.15rem;
+}
+
+.staffTitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 0.15rem;
+}
+
+.staffEmail {
+  font-size: 0.85rem;
+  color: #9a2154;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.staffEmail:hover {
+  text-decoration: underline;
+}
+
+/* Text Content Styles */
+.textContent {
+  color: #444444;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.textContent p {
+  margin-bottom: 1.2rem;
+}
+
+.textContent h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #222222;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.textContent ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.textContent li {
+  margin-bottom: 1rem;
+}
+
+.textContent strong {
+  color: #222222;
+}
+
+.mobileSidebar {
+  display: none;
+}
+
+.desktopSidebar {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .desktopSidebar {
+    display: none;
+  }
+  .mobileSidebar {
+    display: block;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .staffGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .staffName {
+    font-size: 1rem;
+  }
+  
+  .staffTitle, .staffEmail {
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,210 @@
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+}
+
+.thinDivider {
+  width: 100%;
+  height: 6px;
+  background-color: #9a2154;
+}
+
+/* Mission Bar */
+.missionBar {
+  background-color: #9a2154;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  max-width: 1800px;
+  width: 96%;
+  margin: 4rem auto;
+  border-radius: 20px;
+}
+
+.missionContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.missionIcon {
+  opacity: 0.6; /* The logo is faded/watermarked in the background usually, but we place it top center */
+  margin-bottom: 0;
+}
+
+.missionText {
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.4;
+  max-width: 1300px;
+}
+
+/* Main Footer Links */
+.footerLinksSection {
+  background-color: #f9f9f9;
+  padding: 1.5rem 2rem;
+}
+
+.footerLinksContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .footerLinksContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerLinksContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogo {
+  height: auto;
+  max-height: 150px;
+  width: 100%;
+  max-width: 220px;
+  margin-bottom: 2rem;
+  object-fit: contain;
+  object-position: left center;
+  align-self: flex-start;
+}
+
+.columnTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #222222;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.footerLinkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.footerLinkList a {
+  color: #555555;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.05em;
+}
+
+.footerLinkList a:hover {
+  color: #9a2154;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e5e5e5;
+  width: 50%;
+  margin: 0.75rem 0;
+}
+
+/* Copyright Bar */
+.copyrightBar {
+  background-color: #333333;
+  color: #cccccc;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 768px) {
+  .mobileHideFooterMenu {
+    display: none;
+  }
+}
+
+.copyrightContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .copyrightContainer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+}
+
+.copyrightLeft p {
+  margin: 0;
+}
+
+.copyrightRight {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .copyrightRight {
+    align-items: center;
+  }
+}
+
+.reportBtn {
+  background-color: #f2f2f2;
+  color: #9a2154;
+  border: none;
+  padding: 0.35rem 1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.reportBtn:hover {
+  background-color: #ffffff;
+}
+
+.legalLinks {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.legalLinks a {
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.legalLinks a:hover {
+  text-decoration: underline;
+}
+
+.legalLinks span {
+  color: #666666;
+}

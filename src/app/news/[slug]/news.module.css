@@ -1,0 +1,125 @@
+.main {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.backNav {
+  margin-bottom: 3rem;
+}
+
+.backNav a {
+  color: #222222;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.backNav a:hover {
+  text-decoration: underline;
+}
+
+.articleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.textContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 2.2rem;
+  color: #222222;
+  margin-bottom: 2rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contentBody {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444444;
+  margin-bottom: 1rem;
+}
+
+.contentBody p {
+  margin-bottom: 1.5rem;
+}
+
+.externalLinkContainer {
+  font-size: 1.1rem;
+  color: #444444;
+  margin-top: 0.5rem;
+}
+
+.externalLink {
+  color: #9a2154;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.externalLink:hover {
+  text-decoration: underline;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.featuredImage {
+  width: 100%;
+  height: auto;
+}
+
+.paginationSection {
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.redLine {
+  border: none;
+  border-top: 1px solid #9a2154;
+  margin-bottom: 2rem;
+}
+
+.paginationLinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pageLink {
+  color: #9a2154;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.pageLink:hover {
+  text-decoration: underline;
+}
+
+.pageLinkDisabled {
+  color: #cccccc;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .articleGrid {
+    grid-template-columns: 1fr;
+  }
+}
