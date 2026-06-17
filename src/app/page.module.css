@@ -261,12 +261,12 @@
 /* Beyond the Classroom Section */
 .beyondSection {
   background-color: #01172c;
-  padding: 0; /* Remove padding to allow full bleed */
+  padding: 0 0 5rem 0;
 }
 
 .beyondHeaderContainer {
   padding: 5rem 2rem 3rem 2rem;
-  background-color: #ffffff; /* Reverted to white so text is not in the blue */
+  background-color: #ffffff;
 }
 
 .beyondHeader {
@@ -276,8 +276,11 @@
 .beyondGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0; /* Images stack flush against each other */
+  gap: 2rem;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 @media (min-width: 1024px) {
@@ -297,44 +300,27 @@
 .beyondImage {
   position: relative;
   width: 100%;
-  height: 75vh; /* Extremely tall immersive images */
-  min-height: 500px;
+  aspect-ratio: 1 / 1;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.beyondImage::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 60%;
-  background: linear-gradient(to top, #01172c 0%, rgba(1, 23, 44, 0) 100%);
-  pointer-events: none;
+  margin-bottom: 1.5rem;
 }
 
 .beyondItem:hover .beyondImage {
-  transform: translateY(0) scale(1.05); /* Just scale, no translate since there is no gap */
+  transform: translateY(-5px);
 }
 
 .beyondOverlay {
-  position: absolute; /* Overlap image */
-  bottom: 4rem;
-  left: 0;
-  right: 0;
   text-align: center;
   background: transparent;
-  pointer-events: auto;
-  z-index: 10;
 }
 
 .beyondTitle {
   color: #ffffff;
-  font-size: 2.5rem; /* Much larger font */
+  font-size: 1.25rem;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -342,7 +328,7 @@
 }
 
 .beyondItem:hover .beyondTitle {
-  color: #a9d4f5; /* light blue tint on hover */
+  color: #a9d4f5;
 }
 
 .ctas a {
