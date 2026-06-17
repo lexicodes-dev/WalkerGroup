@@ -261,12 +261,12 @@
 /* Beyond the Classroom Section */
 .beyondSection {
   background-color: #01172c;
-  padding: 0 0 5rem 0;
+  padding: 0 0 5rem 0; /* Remove top padding so images touch the white header perfectly */
 }
 
 .beyondHeaderContainer {
   padding: 5rem 2rem 3rem 2rem;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
 }
 
 .beyondHeader {
@@ -276,9 +276,9 @@
 .beyondGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 6rem; /* Increased gap further */
   width: 100%;
-  max-width: 1400px;
+  max-width: 1800px; /* Expand grid container to make images huge */
   margin: 0 auto;
   padding: 0 2rem;
 }
@@ -297,20 +297,36 @@
   cursor: pointer;
 }
 
-.beyondImage {
+.beyondImageWrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 3 / 4; /* Make pictures significantly taller */
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.beyondImageWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 35%;
+  background: linear-gradient(to top, #01172c 0%, rgba(1, 23, 44, 0) 100%);
+  pointer-events: none;
+}
+
+.beyondImage {
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  overflow: hidden;
   transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  margin-bottom: 1.5rem;
 }
 
 .beyondItem:hover .beyondImage {
-  transform: translateY(-5px);
+  transform: scale(1.05);
 }
 
 .beyondOverlay {
@@ -320,7 +336,7 @@
 
 .beyondTitle {
   color: #ffffff;
-  font-size: 1.25rem;
+  font-size: 1.5rem; /* Slightly larger text */
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.05em;

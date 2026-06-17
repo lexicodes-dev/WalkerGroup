@@ -208,10 +208,12 @@ export default async function Home() {
         <div className={styles.beyondGrid}>
           {/* Item 1 */}
           <div className={styles.beyondItem}>
-            <div 
-              className={styles.beyondImage} 
-              style={{ backgroundImage: `url('https://fpsct.org/wp-content/uploads/2025/12/winter.png')` }}
-            ></div>
+            <div className={styles.beyondImageWrapper}>
+              <div 
+                className={styles.beyondImage} 
+                style={{ backgroundImage: `url('https://fpsct.org/wp-content/uploads/2025/12/winter.png')` }}
+              ></div>
+            </div>
             <div className={styles.beyondOverlay}>
               <h3 className={styles.beyondTitle}>WINTER ATHLETICS</h3>
             </div>
@@ -219,10 +221,12 @@ export default async function Home() {
 
           {/* Item 2 */}
           <div className={styles.beyondItem}>
-            <div 
-              className={styles.beyondImage} 
-              style={{ backgroundImage: `url('https://fpsct.org/wp-content/uploads/2025/08/artcard-copy.jpg')` }}
-            ></div>
+            <div className={styles.beyondImageWrapper}>
+              <div 
+                className={styles.beyondImage} 
+                style={{ backgroundImage: `url('https://fpsct.org/wp-content/uploads/2025/08/artcard-copy.jpg')` }}
+              ></div>
+            </div>
             <div className={styles.beyondOverlay}>
               <h3 className={styles.beyondTitle}>FINE & APPLIED ARTS</h3>
             </div>
@@ -230,10 +234,12 @@ export default async function Home() {
 
           {/* Item 3 */}
           <div className={styles.beyondItem}>
-            <div 
-              className={styles.beyondImage} 
-              style={{ backgroundImage: `url('https://fpsct.org/wp-content/uploads/2025/08/musiccard-copy.jpg')` }}
-            ></div>
+            <div className={styles.beyondImageWrapper}>
+              <div 
+                className={styles.beyondImage} 
+                style={{ backgroundImage: `url('https://fpsct.org/wp-content/uploads/2025/08/musiccard-copy.jpg')` }}
+              ></div>
+            </div>
             <div className={styles.beyondOverlay}>
               <h3 className={styles.beyondTitle}>MUSIC IN OUR SCHOOLS</h3>
             </div>
